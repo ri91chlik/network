@@ -1,0 +1,53 @@
+.post_1{
+    border:1px  solid grey;
+    width:800px;
+    margin-left:0;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    
+}
+
+#form{
+    margin-left:20px;
+    
+
+  
+}
+
+.post_2 {
+    border: 1px dotted grey;
+    margin-top:5px;
+    margin-bottom:5px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;margin-right:20px;
+    padding:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

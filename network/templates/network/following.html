@@ -1,0 +1,34 @@
+{% extends "network/layout.html" %}
+
+
+    
+{% block body %}
+<h5>FOLLOWING</H5>
+
+    <div class="page_posts">
+        {% for post in page_posts %}
+            <div>
+                <h3 class="name"><a href="{% url 'profile' user_id=post.user.id %}"> @{{post.user}}</a></h3>
+                    <p class="information"> {{post.information}}</p>
+                        <h6>{{post.date}}</h6>
+            </div>
+    </div>
+        {% endfor %}
+    
+    
+
+    <div class= 'pagi'>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination d-flex-justify-information-center">
+            {% if page_posts.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{page_posts.previous_page_number}}">Previous</a></li>
+            {%endif%}   
+            {%if page_posts.has_next%}
+                <li class="page-item"><a class="page-link" href="?page={{page_posts.next_page_number}}">Next</a></li>
+            {%endif%}
+        </ul>
+    </nav>
+    </div>  
+    
+
+{% endblock %}
